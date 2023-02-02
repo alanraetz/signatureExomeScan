@@ -35,4 +35,8 @@ DNA_Codons = {  # dictionary lookup of amino acid give the codon as the key
 }
 
 def codonLookup (codon):
-    return DNA_Codons[codon]
+
+    if 'N' in codon:
+        return 'N'
+    else:
+        return DNA_Codons[codon]
